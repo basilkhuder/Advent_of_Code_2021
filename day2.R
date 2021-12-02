@@ -13,3 +13,6 @@ coord_sum <- aggregate(coordinates$Position,
                        FUN = sum) 
 
 (coord_sum[1, ]$x - coord_sum[3, ]$x) * coord_sum[2, ]$x
+
+# Part Two --------------------------------------------------------------------------
+
