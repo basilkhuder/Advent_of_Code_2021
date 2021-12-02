@@ -1,5 +1,5 @@
 # Part One --------------------------------------------------------------------------
-
+# Solving through iteration
 input <- readLines("input.txt") |>
   as.numeric()
 
@@ -9,7 +9,7 @@ depth_compare <-
 depth_compare[depth_compare > 0] |>
   length()
 
-# Using the diff() function to calculate lagging differences
+# Solving Using the diff() function to calculate lagging differences
 
 input[diff(input, lag = 1) > 0] |>
   length() - 1
