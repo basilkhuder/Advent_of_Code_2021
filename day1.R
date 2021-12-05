@@ -13,3 +13,9 @@ depth_compare[depth_compare > 0] |>
 
 input[diff(input, lag = 1) > 0] |>
   length() - 1
+
+
+# Part Two ----------------------------------------------------------------
+# Sum of three measurement window
+sum(diff(input, lag = 3) > 0)
+
