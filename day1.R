@@ -1,5 +1,6 @@
 # Part One --------------------------------------------------------------------------
 # Solving through iteration
+
 input <- readLines("input.txt") |>
   as.numeric()
 
@@ -17,5 +18,6 @@ input[diff(input, lag = 1) > 0] |>
 
 # Part Two ----------------------------------------------------------------
 # Sum of three measurement window
+
 sum(diff(input, lag = 3) > 0)
 
