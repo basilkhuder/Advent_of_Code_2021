@@ -1,6 +1,8 @@
 # Part One --------------------------------------------------------------------------
 # Advent of Code using only base-R
 
+# Part One --------------------------------------------------------------------------
+
 input <- readLines("input4.txt")
 bingo_nums <- input[[1]] |>
   strsplit(",")
@@ -8,8 +10,8 @@ bingo_nums <- input[[1]] |>
 bingo_nums <- bingo_nums[[1]] |>
   as.numeric()
 
-boards <- input[-1] |>
-  split(cumsum(boards == ""))
+boards <- input[-1]
+boards <- split(boards, cumsum(boards == ""))
 
 boards <- lapply(boards, \(x) {
   boards <- x[x != ""]
@@ -62,4 +64,5 @@ wb_scoring_index <-
 wb_scoring_board <- wb_scoring[wb_scoring_index][[1]]
 winning_board[[1]][ifelse(wb_scoring_board == 1, FALSE, TRUE)] |>
   sum() * bingo_nums[wb_scoring_index]
+
 
