@@ -11,3 +11,5 @@ the functionalities native to R.
 | 2 | Dive! | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day2.R)
 | 3 | Binary Diagnostic | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day3.R)
 | 4 | Giant Squid  | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day4.R)
+| 5 | Hydrothermal Venture  | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day5.R)
+
