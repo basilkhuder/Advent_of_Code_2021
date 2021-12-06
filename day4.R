@@ -1,7 +1,5 @@
 # Part One --------------------------------------------------------------------------
-# Advent of Code using only base-R
-
-# Part One --------------------------------------------------------------------------
+# Advent of Code using base-R
 
 input <- readLines("input4.txt")
 bingo_nums <- input[[1]] |>
@@ -66,3 +64,24 @@ winning_board[[1]][ifelse(wb_scoring_board == 1, FALSE, TRUE)] |>
   sum() * bingo_nums[wb_scoring_index]
 
 
+
+# Part Two --------------------------------------------------------------------------
+# C/P from lines 46-64 using maximization rather than minimization 
+losing_board <-
+  boards[as.numeric(names(which(
+    bingo_call_index == max(bingo_call_index)
+  )))]
+
+wb_scoring <- lapply(bingo_nums, \(x) losing_board[[1]] == x)
+wb_scoring <- Reduce("+", wb_scoring, accumulate = TRUE)
+wb_scoring_check <- lapply(wb_scoring, row_check)
+wb_scoring_check  <- lapply(seq_along(wb_scoring_check), \(x) {
+  data.frame(bingo = as.character(wb_scoring_check[[x]]) , index = x)
+})
+
+wb_scoring_check <- do.call(rbind, wb_scoring_check)
+wb_scoring_index <-
+  min(subset(wb_scoring_check, bingo == "Yes")$index)
+wb_scoring_board <- wb_scoring[wb_scoring_index][[1]]
+losing_board[[1]][ifelse(wb_scoring_board == 1, FALSE, TRUE)] |>
+  sum() * bingo_nums[wb_scoring_index]
