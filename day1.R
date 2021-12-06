@@ -1,4 +1,5 @@
 # Part One --------------------------------------------------------------------------
+# Advent of Code using only base-R
 # Solving through iteration
 
 input <- readLines("input.txt") |>
