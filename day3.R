@@ -1,4 +1,5 @@
 # Part One ----------------------------------------------------------------
+# Advent of Code using only base-R
 # Binary numbers for power consumption
 
 input <- readLines("input3.txt") |>
