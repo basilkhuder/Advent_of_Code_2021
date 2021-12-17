@@ -1,3 +1,6 @@
+# Part One --------------------------------------------------------------------------
+# Advent of Code using base-R
+
 input <- readLines("input5.txt") |>
   {\(x) gsub(" -> ", ",", x)}() |>
   strsplit(",") |>
