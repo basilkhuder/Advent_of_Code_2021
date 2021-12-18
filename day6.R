@@ -1,5 +1,6 @@
 #Part One ----------------------------------------------------------------
 #VERY inefficient, and don't like having to use superassignment.
+
 input <- readLines("input6.txt") |>
   strsplit(",") |>
   {\(x) as.numeric(Reduce("c", x))}()
