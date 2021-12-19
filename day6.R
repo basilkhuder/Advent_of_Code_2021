@@ -1,4 +1,5 @@
 #Part One ----------------------------------------------------------------
+# Advent of Code using only base-R
 #VERY inefficient, and don't like having to use superassignment.
 
 input <- readLines("input6.txt") |>
