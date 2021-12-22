@@ -1,5 +1,6 @@
 # Part One ----------------------------------------------------------------
 # Advent of Code using only base-R
+
 input <- readLines("input9.txt")
 ncol <- length(strsplit(input[[1]], "")[[1]])
 
