@@ -20,4 +20,4 @@ There were 11 days after day four where I forgot about AOC. So, I'm only focusin
 | 7 | The Treachery of Whales  | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day7.R) | Yes | No
 | 8 | Seven Segment Search | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day8.R) | Yes | No
 | 9 | Smoke Basin | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day9.R) | Yes | No
-
+| 10 | Syntax Scoring | [Code](https://github.com/basilkhuder/Advent_of_Code_2021/blob/main/day10.R) | No | No
